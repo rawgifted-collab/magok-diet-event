@@ -353,15 +353,6 @@
       line-height: 1.6;
     }
 
-    /* Google Form iframe */
-    .gform-iframe {
-      width: 100%;
-      min-height: 640px;
-      border: none;
-      border-radius: 10px;
-      display: block;
-    }
-
     .btn-call-big {
       display: flex;
       align-items: center;
@@ -424,7 +415,7 @@
   <div class="deadline-chip">
     ⏰ 할인 마감 <span>6월 30일</span>까지
   </div>
-  <a href="#apply" class="hero-cta">지금 이벤트 신청하기 →</a>
+  <a href="https://leandiet.co.kr/@magokdiet" class="hero-cta" target="_blank" rel="noopener">지금 진료받기 →</a>
 </section>
 
 <div class="divider"></div>
@@ -563,25 +554,15 @@
 <!-- ★ APPLY FORM ★ -->
 <section class="section form-section" id="apply">
   <div class="form-card">
-    <p class="form-title">이벤트 신청하기</p>
+    <p class="form-title">지금 바로 진료받기</p>
     <p class="form-sub">
-      신청 후 담당자가 직접 연락드립니다<br>
-      결제는 상담 후 진행 · 부담 없이 신청하세요
+      아래 버튼을 눌러 맥곡 린다이어트 진료를 신청하세요<br>
+      이벤트 할인은 6월 30일까지만 적용됩니다
     </p>
 
-    <!--
-      ✏️ Google Form 연결 방법:
-      1. forms.google.com에서 새 폼 만들기
-      2. 보내기 버튼 → < > (임베드) 탭 → HTML 복사
-      3. 아래 GOOGLE_FORM_EMBED_URL을 폼 URL로 교체
-      4. 위 .gform-iframe의 display를 'none'에서 'block'으로 변경
-      5. 아래 .form-pending 섹션을 삭제
-    -->
-    <iframe
-      class="gform-iframe"
-      src="https://docs.google.com/forms/d/e/1FAIpQLSfo2KNZxyFnP2-eR_lLrBA9OyXMudPlrViICVTjjcLAO-MwkA/viewform?embedded=true"
-      title="이벤트 신청 폼"
-    ></iframe>
+    <a href="https://leandiet.co.kr/@magokdiet" class="btn-call-big" target="_blank" rel="noopener" style="background: #6c3fc5; box-shadow: 0 4px 16px rgba(108,63,197,0.35);">
+      진료받기
+    </a>
 
     <a href="tel:050714301090" class="btn-call-big">
       📞 0507-1430-1090 전화 신청
@@ -600,23 +581,14 @@
     아래 href="KAKAO_CHANNEL_URL" 부분을 교체하세요
     예: href="https://pf.kakao.com/_xxxxx/chat"
   -->
-  <a href="KAKAO_CHANNEL_URL" class="btn-bar btn-kakao" target="_blank" rel="noopener">
+  <a href="http://pf.kakao.com/_xlQKcn" class="btn-bar btn-kakao" target="_blank" rel="noopener">
     💬 카카오 문의
   </a>
-  <a href="#apply" class="btn-bar btn-apply-bar">
-    신청하기
+  <a href="https://leandiet.co.kr/@magokdiet" class="btn-bar btn-apply-bar" target="_blank" rel="noopener">
+    진료받기
   </a>
 </div>
 
-<script>
-  // 하단 '신청하기' 버튼 클릭 시 폼으로 부드럽게 스크롤
-  document.querySelectorAll('a[href="#apply"]').forEach(el => {
-    el.addEventListener('click', e => {
-      e.preventDefault();
-      document.getElementById('apply').scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-</script>
 
 </body>
 </html>
