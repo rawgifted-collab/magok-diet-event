@@ -369,6 +369,53 @@
       box-shadow: 0 4px 16px rgba(27,148,99,0.35);
     }
 
+    /* ── MODEL BANNER ────────────────────────────── */
+    .model-banner { line-height: 0; background: #000; }
+    .model-banner img { width: 100%; display: block; }
+    .model-caption {
+      background: #f8fdf9;
+      text-align: center;
+      font-size: 12px;
+      color: var(--gray);
+      padding: 8px 16px;
+      line-height: 1.5;
+    }
+
+    /* ── CELEB SECTION ────────────────────────────── */
+    .celeb-section { background: #fff; padding: 0 !important; }
+    .celeb-head { padding: 36px 20px 20px; }
+    .celeb-img-wrap { overflow: hidden; line-height: 0; }
+    .celeb-img-wrap img { width: 100%; display: block; }
+    .celeb-label {
+      text-align: center;
+      font-size: 12px;
+      color: var(--gray);
+      padding: 10px 20px 36px;
+      background: #fff;
+    }
+
+    /* ── REVIEW SECTION ───────────────────────────── */
+    .review-section { background: #f8fdf9; }
+    .review-img-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    }
+    .review-img-wrap img { width: 100%; display: block; }
+
+    /* ── CHART ────────────────────────────────────── */
+    .chart-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      margin-top: 28px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .chart-wrap img { width: 100%; display: block; }
+
+    /* ── REASON SECTION ───────────────────────────── */
+    .reason-section { background: #fff; padding: 0 !important; line-height: 0; }
+    .reason-section img { width: 100%; display: block; }
+
     /* ── FIXED BOTTOM BAR ─────────────────────────── */
     .bottom-bar {
       position: fixed;
@@ -417,6 +464,13 @@
   </div>
   <a href="https://leandiet.co.kr/@magokdiet" class="hero-cta" target="_blank" rel="noopener">지금 진료받기 →</a>
 </section>
+
+<!-- ★ MODEL BANNER ★ -->
+<div class="model-banner">
+  <img src="https://image.leandiet.co.kr/width/480/webp/https://public-file.leandiet.co.kr/assets/web/main/model_hyeri_hero_mob.png"
+       alt="혜리가 선택한 린다이어트">
+  <p class="model-caption">배우 혜리가 직접 선택한 다이어트 · 감량을 넘어 건강한 삶</p>
+</div>
 
 <div class="divider"></div>
 
@@ -467,6 +521,21 @@
 
 <div class="divider"></div>
 
+<!-- ★ CELEB ★ -->
+<section class="section celeb-section">
+  <div class="celeb-head">
+    <p class="sec-title">셀럽들이 선택한 린다이어트</p>
+    <p class="sec-sub" style="margin-bottom:0">유튜버·연예인부터 일반인까지, 모두의 선택</p>
+  </div>
+  <div class="celeb-img-wrap">
+    <img src="https://image.leandiet.co.kr/width/480/webp/https://public-file.leandiet.co.kr/assets/web/main/model_napolimatfia_mo_x3.png"
+         alt="나폴리마피아 린다이어트 후기" loading="lazy">
+  </div>
+  <p class="celeb-label">유튜버 나폴리마피아 린다이어트 후기</p>
+</section>
+
+<div class="divider"></div>
+
 <!-- ★ BENEFIT ★ -->
 <section class="section benefit-section">
   <p class="sec-title">이 페이지를 통해 신청하면?</p>
@@ -484,6 +553,18 @@
       <div class="benefit-chip">🍯 경옥고</div>
       <div class="benefit-chip">기타 비급여 항목</div>
     </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ★ REVIEWS ★ -->
+<section class="section review-section">
+  <p class="sec-title">실제 이용자 후기</p>
+  <p class="sec-sub">직접 경험한 분들의 솔직한 이야기</p>
+  <div class="review-img-wrap">
+    <img src="https://leandiet.co.kr/assets/img_user_message-D54Ugx5U.png"
+         alt="실제 이용자 후기" loading="lazy">
   </div>
 </section>
 
@@ -519,6 +600,19 @@
     <li><span class="ck">✓</span> 지금이 연 중 가장 저렴한 시기 — 이번 이벤트 기간뿐</li>
     <li><span class="ck">✓</span> 지금 시작하면 8월 전 변화를 느끼실 수 있습니다</li>
   </ul>
+
+  <div class="chart-wrap">
+    <img src="https://image.leandiet.co.kr/width/480/webp/https://public-file.leandiet.co.kr/assets/web/main/img_chart_mobile_2.png"
+         alt="린다이어트 실제 감량 결과 차트" loading="lazy">
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ★ REASON ★ -->
+<section class="reason-section">
+  <img src="https://image.leandiet.co.kr/width/480/webp/https://public-file.leandiet.co.kr/assets/web/main/bg_reason_mobile.png"
+       alt="린다이어트를 선택해야 하는 이유" loading="lazy">
 </section>
 
 <div class="divider"></div>
@@ -529,23 +623,16 @@
   <p class="sec-sub">린다이어트 공식 가맹 한의원</p>
 
   <div class="trust-img-wrap">
-    <!--
-      ✏️ 이미지 교체 방법:
-      leandiet.co.kr/@magokdiet 페이지에서 원하는 이미지를
-      마우스 우클릭 → 이미지 주소 복사 → 아래 src에 붙여넣기
-      또는 이미지를 직접 다운로드해서 이 파일과 같은 폴더에 넣고
-      src="이미지파일명.jpg" 형태로 교체하세요.
-    -->
     <img
-      src="https://leandiet.co.kr/img/common/logo.png"
-      alt="마곡발산한의원 린다이어트"
-      onerror="this.parentElement.innerHTML='<div class=trust-img-fallback><div class=logo-text>마곡발산한의원 린다이어트</div><div class=logo-sub>린다이어트 공식 가맹점</div></div>'"
+      src="https://image.leandiet.co.kr/width/480/webp/https://public-file.leandiet.co.kr/assets/web/main/introduce_doctor.png"
+      alt="린다이어트 한의사 소개"
+      loading="lazy"
     >
   </div>
 
   <p class="trust-caption">
     린다이어트 공식 가맹 한의원으로<br>
-    검증된 프로그램을 제공합니다
+    전문 한의사의 밀착 관리를 제공합니다
   </p>
 </section>
 
